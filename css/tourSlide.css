@@ -1,0 +1,296 @@
+/* ***************** Slide *************** */
+
+.tours-experience > h2 {
+  color: var(--color);
+  height: 20%;
+}
+
+.slide-container {
+  height: 80%;
+}
+
+.tab-slider-ctn {
+  background-color: #222222;
+}
+
+.tab-slider {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border-radius: 1.6rem;
+}
+
+.tab-slide-mobile {
+  display: none;
+}
+
+.dot-mobile {
+  display: none;
+}
+
+.slick-slider-dots {
+  width: 100%;
+}
+
+.slick-dots {
+  display: block;
+  list-style: none;
+  font-size: 1.4rem;
+  color: var(--color);
+  width: 100%;
+}
+
+.slick-dots li {
+  width: 100%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.slick-dots span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.slick-dots li.slick-active,
+.slick-dots li:hover {
+  background: linear-gradient(90deg, #84c4ff 0%, #5cc4bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slick-dots li.slick-active span {
+  font-weight: 700;
+}
+
+.tab-slide-icon {
+  margin-bottom: 2rem;
+}
+
+.slick-arrow {
+  width: 5rem;
+  height: 5rem;
+  background-color: #000000;
+  color: #ddb152;
+  font-size: 2.4rem;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-arrow:hover {
+  opacity: 0.6;
+}
+
+.slick-prev {
+  border-radius: 50% 0 0 50%;
+}
+
+.slick-next {
+  border-radius: 0 50% 50% 0;
+}
+
+.progress {
+  display: block;
+  margin-top: 3rem;
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: #000000;
+  background-image: linear-gradient(to right, #ddb152, #ddb152);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+
+  transition: background-size 0.4s ease-in-out;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-tour {
+  height: 100%;
+  padding: 2rem;
+}
+
+.slide-tour-item {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.slide-tour-item > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.6rem;
+  object-fit: cover;
+}
+
+.slide-item-content {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--color);
+  text-align: center;
+  width: 100%;
+}
+
+.slide-item-content h3 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.slide-item-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  animation: bottomToTop 0.5s linear;
+}
+
+.slide-item-info p {
+  width: 60%;
+  font-size: 1.4rem;
+}
+
+.slide-tour-item:hover .slide-item-info {
+  display: flex;
+}
+
+.slide-tour-item:hover .slide-item-content h3 {
+  display: none;
+}
+
+@keyframes bottomToTop {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+}
+
+/* Màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+}
+
+/* Màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .slide-container {
+    position: relative;
+  }
+
+  .tab-slider-ctn {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .tab-slider-ctn img {
+    display: none;
+  }
+
+  .slick-dots {
+    font-size: 4rem;
+  }
+
+  .slick-dots li {
+    display: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .slick-dots span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat";
+  }
+
+  .slick-dots li.slick-active {
+    display: block;
+  }
+
+  .slick-arrow {
+    width: 12rem;
+    height: 12rem;
+    font-size: 3rem;
+  }
+
+  .slick-slider-nav,
+  .progress {
+    position: absolute;
+    bottom: -10rem;
+    transform: translateY(50%);
+  }
+
+  .slick-slider-nav {
+    display: flex;
+    justify-content: center;
+    z-index: 111;
+    left: 5%;
+  }
+
+  .progress {
+    left: 35rem;
+    width: 60%;
+    margin-top: 0;
+    height: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .slide-tour-item {
+    height: 100rem;
+  }
+
+  .slide-item-content h3 {
+    font-size: 6rem;
+  }
+
+  .slide-item-info p {
+    width: 80%;
+    font-size: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 4rem 0;
+  }
+
+  .slide-tour-item:hover .slide-item-info {
+    display: flex;
+  }
+
+  .slide-tour-item:hover .slide-item-content h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-tour-item {
+    height: 80rem;
+  }
+  .progress {
+    width: 50%;
+  }
+
+  .slick-dots li {
+    margin-bottom: 1rem;
+  }
+}

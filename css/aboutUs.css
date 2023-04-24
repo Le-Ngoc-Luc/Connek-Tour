@@ -1,0 +1,154 @@
+/* about us */
+
+.about-us {
+  position: relative;
+  color: var(--color);
+}
+
+.about-us-content {
+  padding-top: 16rem;
+}
+
+.about-us-content > p {
+  font-size: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+
+.about-us-content > button {
+  padding: 1rem 1.6rem;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 3.2rem;
+  background: linear-gradient(to right, #84c4ff, #5cc4bb);
+}
+
+.assessments {
+  position: relative;
+}
+
+.assessment-item {
+  position: absolute;
+  display: flex;
+  width: 11.2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assessment-item > h3 {
+  font-size: 3.8rem;
+}
+
+.assessment-item > span {
+  font-size: 1.6rem;
+}
+
+.assessment-item > img {
+  width: 6.4rem;
+  height: 6.4rem;
+  object-fit: contain;
+}
+
+.happy-guests {
+  top: 20rem;
+  left: 0;
+}
+
+.trips-se-rved {
+  top: 10rem;
+  left: 40%;
+}
+
+.tripadvisor-rate {
+  top: 0rem;
+  left: 80%;
+}
+
+.about-us-img {
+  position: absolute;
+  top: 0;
+  right: -10rem;
+  width: 60%;
+
+  mask-image: url("../images/image-mash.png");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  mask-border-outset: 2px;
+  -webkit-mask-image: url("../images/image-mash.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+}
+
+.about-us-img img {
+  width: 100%;
+  height: 84rem;
+  object-fit: cover;
+}
+/* Màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+}
+
+/* Màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+}
+
+/* Màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .about-us-img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+
+  .about-us-content > p {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    line-height: 8rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .about-us-content > button {
+    padding: 2rem 3rem;
+    font-size: 4rem;
+    border-radius: 5rem;
+    margin: 3rem 0 7rem;
+  }
+
+  .assessments {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .assessment-item {
+    position: relative;
+    top: unset;
+    left: unset;
+    text-align: center;
+  }
+
+  .assessment-item > h3 {
+    font-size: 5rem;
+  }
+
+  .assessment-item > span {
+    font-size: 3rem;
+  }
+
+  .assessment-item > img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 576px) {
+}

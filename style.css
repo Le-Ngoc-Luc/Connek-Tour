@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --color: #ffffff;
+  --primary-font: "Montserrat";
+  --secondary-font: "Poppins";
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.font-heading {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+  background-image: url("./images/PC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+.about-us,
+.connecting-following,
+.customers-review,
+.destination,
+footer,
+header,
+.tours-experience {
+  height: 85rem;
+}
+
+.about-us,
+.connecting-following,
+.customers-review,
+.destination,
+footer,
+.tours-experience {
+  margin-top: 10rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/* Màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+
+/* Màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+  footer,
+  .about-us,
+  .connecting-following,
+  .customers-review,
+  .destination,
+  .tours-experience {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 5px;
+  }
+}

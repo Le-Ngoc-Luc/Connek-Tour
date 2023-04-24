@@ -1,0 +1,23 @@
+.icons-contact-box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 2rem;
+  bottom: 15rem;
+  z-index: 1000000000;
+}
+
+.icons-contact-box img {
+  margin: 1rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .icons-contact-box {
+    bottom: 50%;
+  }
+}

@@ -1,0 +1,158 @@
+/* ****************** FOOTER ********************** */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(../images/img-footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30rem;
+}
+
+.footer-heading {
+  font-size: 10rem;
+  line-height: 13rem;
+  color: var(--color);
+  text-align: center;
+}
+
+.footer-heading span {
+  font-size: 13rem;
+  background: linear-gradient(to bottom, #2e3192, #1bffff 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.footer-contact-item {
+  font-size: 1.6rem;
+  color: var(--color);
+  margin: 1rem 0;
+}
+
+.footer-contact-item > i {
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #2e3192, #1bffff 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-contact-link {
+  width: 40%;
+
+  margin: 1rem auto;
+}
+
+.footer-contact-link img {
+  width: 15%;
+  margin: 0 1.5rem;
+}
+
+footer > p {
+  font-size: 1.6rem;
+  color: var(--color);
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0rem;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 0;
+  background-color: gray;
+  border: none;
+  transform: translateY(200%);
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+
+.bottom-bar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+}
+
+.bottom-bar li:nth-child(4) {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #84c4ff 0%, #5cc4bb 100%);
+  box-shadow: 4px 8px 48px rgba(92, 196, 187, 0.5),
+    inset 4px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-bar img {
+  width: 50%;
+  object-fit: contain;
+}
+
+/* @keyframes bottomOnTop {
+  from {
+    bottom: -20rem;
+  }
+  to {
+    bottom: 0;
+  }
+} */
+
+/* Màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+}
+
+/* Màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+  footer {
+    margin-top: 30rem;
+  }
+}
+
+/* Màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .bottom-bar {
+    display: flex;
+  }
+
+  .footer-heading {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+  .footer-heading span {
+    font-size: 10rem;
+  }
+
+  footer > img {
+    width: 20rem;
+    object-fit: contain;
+  }
+
+  .footer-contact-item {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+
+  .footer-contact-item > i {
+    font-size: 5rem;
+  }
+
+  footer > p {
+    font-size: 3rem;
+  }
+}

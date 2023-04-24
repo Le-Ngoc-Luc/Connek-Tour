@@ -1,0 +1,262 @@
+header {
+  position: relative;
+  background-image: url("../images/img-panner.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-200%);
+  background-color: #282b2c;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 25px 0;
+  transition: all 0.5s ease;
+  z-index: 100000000000000;
+}
+
+.menu-mobile .close-icon {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.close-icon i {
+  font-size: 25px;
+  width: 100%;
+  padding: 10px 2px;
+  text-align: end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style: none;
+  font-weight: 700;
+  padding: 0;
+}
+
+.menu-list li {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.menu-mobile-contact {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.mobile-contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.mci-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.mci-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mci-img.telephone {
+  background-color: #21695b;
+}
+
+.mci-img.telephone img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.mci-content {
+  padding-left: 2rem;
+}
+
+.mci-content h4 {
+  font-family: "Manrope";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.mci-content p {
+  font-size: 2.5rem;
+}
+
+.contact-arow {
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+/* ********* Icon tab-meunu ************* */
+.icon-menu-mobile {
+  padding-left: 1rem;
+  display: none;
+  width: 10%;
+  min-width: 6rem;
+}
+
+.icon-menu-mobile img {
+  width: 70%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.header-top {
+  padding: 2rem 0;
+}
+
+.logo > img {
+  width: 100%;
+  overflow: cover;
+  min-width: 10rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color);
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.header-top-right {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.header-top-right .phone-number {
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+  width: 16rem;
+}
+
+.header-top-right .plan-tour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 4.8rem;
+  background: linear-gradient(to right, #84c4ff, #5cc4bb);
+  border-radius: 3.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header-content {
+  margin-top: 5%;
+}
+
+.header-content > h1 {
+  font-size: 10rem;
+  color: var(--color);
+}
+
+.header-content > h1 > span {
+  background: linear-gradient(to bottom, #2e3192, #1bffff 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-content img {
+  width: 20%;
+  object-fit: cover;
+}
+
+.header-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  background: linear-gradient(0deg, #222222 0%, rgba(34, 34, 34, 0) 83.81%);
+}
+
+/* @media (max-width: 1200px) {
+  .header-content > h1 {
+    font-size: 8rem;
+    color: var(--color);
+  }
+}*/
+
+@media (max-width: 992px) {
+  .header-content > h1 {
+    font-size: 9.5rem;
+    color: var(--color);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    /* transform: translateY(-100%); */
+    transition: all 0.5s ease-in-out;
+    z-index: 1000000;
+  }
+
+  .header-content {
+    padding-top: 20%;
+    margin-top: 0;
+  }
+
+  .header-content > h1 {
+    font-size: 9rem;
+    color: var(--color);
+  }
+  .menu {
+    display: none;
+  }
+
+  .header-top-right {
+    display: none;
+  }
+
+  .icon-menu-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content > h1 {
+    font-size: 7rem;
+  }
+
+  .header-content {
+    padding-top: 30%;
+  }
+}
