@@ -26,7 +26,6 @@
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  outline: 1.5rem solid rgb(34, 34, 34);
   z-index: 1111111111;
   background-image: url(../images/Vector.png);
   background-position: center;
@@ -35,6 +34,8 @@
 }
 
 .img-left-block .vector {
+  outline: 1.5rem solid rgb(34, 34, 34);
+
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
@@ -104,6 +105,7 @@
 }
 
 .img-right-block .vector {
+  outline: 1.5rem solid #2b2721;
   right: 35%;
   top: 0;
   transform: translate(50%, -50%);
@@ -115,7 +117,7 @@
   left: -4rem;
   top: 50%;
   border-top-right-radius: 7rem;
-  box-shadow: 0.2rem -1rem #2c2721;
+  box-shadow: 0.2rem -1rem rgb(34, 34, 34);
   background-color: rgba(0, 0, 0, 0);
   height: 4rem;
   width: 3rem;
@@ -127,7 +129,7 @@
   right: -4rem;
   top: 50%;
   border-top-left-radius: 7rem;
-  box-shadow: -0.2rem -1rem #2c2721;
+  box-shadow: -0.2rem -1rem rgb(34, 34, 34);
   background-color: rgba(0, 0, 0, 0);
   height: 4rem;
   width: 3rem;
