@@ -115,7 +115,7 @@
   left: -4rem;
   top: 50%;
   border-top-right-radius: 7rem;
-  box-shadow: 0.2rem -1rem rgb(34, 34, 34);
+  box-shadow: 0.2rem -1rem #2c2721;
   background-color: rgba(0, 0, 0, 0);
   height: 4rem;
   width: 3rem;
@@ -127,7 +127,7 @@
   right: -4rem;
   top: 50%;
   border-top-left-radius: 7rem;
-  box-shadow: -0.2rem -1rem rgb(34, 34, 34);
+  box-shadow: -0.2rem -1rem #2c2721;
   background-color: rgba(0, 0, 0, 0);
   height: 4rem;
   width: 3rem;
